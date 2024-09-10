@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        'header'
+        'main-content'
+        'footer';
+    height: 100vh;
+}
+
+header {
+    grid-area: header;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+/* Main Content */
+.main-content {
+    grid-area: main-content;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'hero'
+        'about'
+        'services'
+        'contact';
+}
+
+/* Hero */
+.hero {
+    grid-area: hero;
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* About section */
+.about-section {
+    grid-area: about;
+    padding: 3rem 2rem;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+/*  */

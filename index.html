@@ -1,26 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>HTML sida</title>
+        <title>Responsiv Webbsida med Grid Areas och Bootstrap</title>
+        <!-- Bootstrap CSS CDN -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="index.css" />
     </head>
     <body>
-        <nav></nav>
-        <main>
-            <section>
-                <img src="img/forest-6631518_1920.jpg" alt="Image by
-                <a
-                    href="https://pixabay.com/users/xuanduongvan87-22814888/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6631518"
-                    >Xuan Duong</a
+        <!-- Bootstrap Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Webbplats</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
                 >
-                from
-                <a
-                    href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6631518"
-                    >Pixabay</a
-                >">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Hem</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Om oss</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Tjänster</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- En main sektion för allt innehåll -->
+        <main class="main-content">
+            <!-- Section Hero -->
+            <section id="home" class="hero">
+                <h1>Välkommen</h1>
+                <p>En responsiv sida byggd med Grid Areas</p>
+            </section>
+            <!-- Section About -->
+            <section id="about" class="about-section">
+                <h2>Om Oss</h2>
+                <p>Vi är experter på allt</p>
+            </section>
+            <!-- Section Services -->
+            <section id="services" class="services-section">
+                <h2>Våra Tjänster</h2>
+                <div class="service-grid">
+                    <div class="service-box">
+                        <h3>Tjänst 1</h3>
+                        <p>Beskrivning av tjänst 1</p>
+                    </div>
+                    <div class="service-box">
+                        <h3>Tjänst 2</h3>
+                        <p>Beskrivning av tjänst 2</p>
+                    </div>
+                    <div class="service-box">
+                        <h3>Tjänst 3</h3>
+                        <p>Beskrivning av tjänst 3</p>
+                    </div>
+                </div>
+            </section>
+            <!-- Contact section -->
+            <section id="contact" class="contact-section">
+                <h2>Kontakta oss</h2>
+                <p>Maila oss: <a href="mailto:info@iths.se">info@iths.se</a></p>
             </section>
         </main>
-        <footer></footer>
+        <footer class="footer">
+            <p>&copy; 2024 webbplats, kopiera den inte</p>
+        </footer>
+
+        <!-- Bootstrap JS and Popper.js -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
