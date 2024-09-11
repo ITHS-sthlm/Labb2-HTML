@@ -13,7 +13,7 @@
     </head>
     <body>
         <!-- Bootstrap Navbar -->
-        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Webbplats</a>
                 <button
@@ -45,68 +45,54 @@
                 </div>
             </div>
         </nav>
-        <!-- En main sektion för allt innehåll -->
+
+        <!-- Hero image -->
+        <section class="hero">
+            <!-- Tom div...bilden läggs här med css -->
+            <div class="overlay"></div>
+            <h1 class="hero-text">Välkommen</h1>
+        </section>
+
+        <!-- Main Content organized with Grid Areas -->
         <main class="main-content">
-            <!-- Section Hero -->
-            <section id="home" class="hero">
-                <h1>Välkommen</h1>
-                <p>En responsiv sida byggd med Grid Areas</p>
-            </section>
-            <!-- Section About -->
+            <!-- About Section -->
             <section id="about" class="about-section">
-                <h2>Om Oss</h2>
-                <p>Vi är experter på allt</p>
+                <h2>Om oss</h2>
+                <p>Vi är experter inom webbutveckling och design.</p>
             </section>
-            <!-- Section Services -->
+
+            <!-- Services Section -->
             <section id="services" class="services-section">
-                <h2>Våra Tjänster</h2>
+                <h2>Våra tjänster</h2>
                 <div class="service-grid">
                     <div class="service-box">
                         <h3>Tjänst 1</h3>
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and
-                            scrambled it to make a type specimen book. It has
-                            survived not only five centuries, but also the leap
-                            into electronic typesetting, remaining essentially
-                            unchanged. It was popularised in the 1960s with the
-                            release of Letraset sheets containing Lorem Ipsum
-                            passages, and more recently with desktop publishing
-                            software like Aldus PageMaker including versions of
-                            Lorem Ipsum
-                        </p>
+                        <p>Beskrivning av tjänst 1.</p>
                     </div>
                     <div class="service-box">
                         <h3>Tjänst 2</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Tenetur aliquam quidem sequi architecto nobis
-                            labore eveniet cum doloremque iste natus earum amet
-                            ab, est odit laboriosam! Quo placeat ea quidem.
-                        </p>
+                        <p>Beskrivning av tjänst 2.</p>
                     </div>
                     <div class="service-box">
                         <h3>Tjänst 3</h3>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing
-                            elit. Soluta veniam ab numquam dolorum. Ratione
-                            dolorem ullam repellendus corporis, qui maiores
-                            asperiores quia illo veritatis consequuntur nihil
-                            incidunt, illum necessitatibus eligendi.
-                        </p>
+                        <p>Beskrivning av tjänst 3.</p>
                     </div>
                 </div>
             </section>
-            <!-- Contact section -->
+
+            <!-- Contact Section -->
             <section id="contact" class="contact-section">
                 <h2>Kontakta oss</h2>
-                <p>Maila oss: <a href="mailto:info@iths.se">info@iths.se</a></p>
+                <p>
+                    Maila oss på
+                    <a href="mailto:info@example.com">info@example.com</a>
+                </p>
             </section>
         </main>
+
+        <!-- Footer -->
         <footer class="footer">
-            <p>&copy; 2024 webbplats, kopiera den inte</p>
+            <p>&copy; 2024 Webbplats. Alla rättigheter förbehållna.</p>
         </footer>
 
         <!-- Bootstrap JS and Popper.js -->
